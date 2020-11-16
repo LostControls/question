@@ -4,7 +4,7 @@ require_once __DIR__ .'/vendor/autoload.php';
 
 use LostControls\Question\Question;
 
-$key = 'e14b1b323c76320e6c2a06bd0d7b61ee';
+$key = 'e14b1b323c76320e6***********';
 
 $w = new Question($key);
 

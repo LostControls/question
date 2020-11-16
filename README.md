@@ -1,4 +1,4 @@
-<h1 align="center"> question </h1>
+<h1 align="center"> Driver's license question bank </h1>
 
 <p align="center"> A Driving test question bank SDK.</p>
 
@@ -12,6 +12,8 @@ $ composer require lostcontrols/question -vvv
 ## Usage
 
 TODO
+
+#####  请查看根目录下的index.php
 
 ## Contributing
 

@@ -20,15 +20,15 @@ class Question
         $this->key = $key;
     }
 
-    public function getHttpClient()
-    {
-        return new Client($this->guzzleOptions);
-    }
-
-    public function setGuzzleOptions($options)
-    {
-        $this->guzzleOptions = $options;
-    }
+//    public function getHttpClient()
+//    {
+//        return new Client($this->guzzleOptions);
+//    }
+//
+//    public function setGuzzleOptions($options)
+//    {
+//        $this->guzzleOptions = $options;
+//    }
 
     /**
      * Notes: 获取题目
@@ -56,7 +56,8 @@ class Question
         ]);
 
         try {
-            $response = $this->getHttpClient()->get($this->url,[
+            $client = new Client();
+            $response = $client->get($this->url,[
                 'query' => $query,
             ])->getBody()->getContents();
 
